@@ -47,7 +47,7 @@ body {
   -webkit-overflow-scrolling: touch;
 }
 
-.content h1 {
+.firstview h1 {
   margin: 0;
   color: #fff;
   height: 50px;
@@ -57,11 +57,68 @@ body {
   background-color: #ff5000;
 }
 
-.content h2 {
+.firstview h2 {
   margin: 0;
   padding-left: 30px;
   color: #ff5000;
   font-size: 100px;
   font-family: "Dela Gothic One", sans-serif;
   font-weight: 400;
+}
+
+.firstview div.purin {
+    position: relative;
+}
+
+.firstview div.purin img {
+    width: 100%;
+    height: 380px;
+}
+
+.firstview div.hukidashi img{
+    position: absolute;
+    width: 330px;
+    height: 200px;
+    top: 200px;
+    left: 110px;
+}
+
+.firstview div.purin p {
+    position: absolute;
+    top: 240px;
+    left: 145px;
+    font-size: 15px;
+    text-align: center;
+    background-repeat: no-repeat;
+}
+
+.firstview div.manken img {
+    width: 100%;
+    height: 300px;
+}
+
+.firstview div.azarashi {
+    position: relative;
+}
+
+.firstview div.azarashi img {
+    width: 100%;
+    height: 380px;
+}
+
+.firstview div.hukidashi2 img{
+    position: absolute;
+    width: 330px;
+    height: 200px;
+    top: 200px;
+    left: 10px;
+}
+
+.firstview div.azarashi p {
+    position: absolute;
+    top: 230px;
+    left: 45px;
+    font-size: 17px;
+    text-align: center;
+    background-repeat: no-repeat;
 }
