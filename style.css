@@ -67,58 +67,101 @@ body {
 }
 
 .firstview div.purin {
-    position: relative;
+  position: relative;
 }
 
 .firstview div.purin img {
-    width: 100%;
-    height: 380px;
+  width: 100%;
+  height: 380px;
 }
 
-.firstview div.hukidashi img{
-    position: absolute;
-    width: 330px;
-    height: 200px;
-    top: 200px;
-    left: 110px;
+.firstview div.hukidashi img {
+  position: absolute;
+  width: 330px;
+  height: 200px;
+  top: 200px;
+  left: 110px;
 }
 
 .firstview div.purin p {
-    position: absolute;
-    top: 240px;
-    left: 145px;
-    font-size: 15px;
-    text-align: center;
-    background-repeat: no-repeat;
+  position: absolute;
+  top: 240px;
+  left: 145px;
+  font-size: 15px;
+  text-align: center;
+  background-repeat: no-repeat;
 }
 
 .firstview div.manken img {
-    width: 100%;
-    height: 300px;
+  width: 100%;
+  height: 300px;
 }
 
 .firstview div.azarashi {
-    position: relative;
+  position: relative;
 }
 
 .firstview div.azarashi img {
-    width: 100%;
-    height: 380px;
+  width: 100%;
+  height: 380px;
 }
 
-.firstview div.hukidashi2 img{
-    position: absolute;
-    width: 330px;
-    height: 200px;
-    top: 200px;
-    left: 10px;
+.firstview div.hukidashi2 img {
+  position: absolute;
+  width: 330px;
+  height: 200px;
+  top: 200px;
+  left: 10px;
 }
 
 .firstview div.azarashi p {
-    position: absolute;
-    top: 230px;
-    left: 45px;
-    font-size: 17px;
-    text-align: center;
-    background-repeat: no-repeat;
+  position: absolute;
+  top: 230px;
+  left: 45px;
+  font-size: 17px;
+  text-align: center;
+  background-repeat: no-repeat;
+}
+
+.marquee {
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  position: relative;
+}
+.marquee-content {
+  display: flex;
+  gap: 20px; /* テキスト同士の間隔 */
+  animation: marquee-loop 10s linear infinite;
+}
+
+@keyframes marquee-loop {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(-50%); /* 半分の位置まで移動 */
+  }
+}
+
+.festival {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.festival h1 {
+  font-size: 35px;
+  color: #397fff;
+  margin-left: 10px;
+}
+
+.festival p {
+  width: 380px;
+  height: 380px;
+  font-size: 15px;
+  margin: 20px;
+  text-align: center;
+  background-color: #ffe432;
+  border-radius: 80px;
 }
