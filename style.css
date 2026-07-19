@@ -1,0 +1,67 @@
+html,
+body {
+  margin: 0;
+  height: 100%;
+}
+
+/* body自体はスクロールさせない */
+body {
+  overflow: hidden;
+  font-family: sans-serif;
+}
+
+/* 画面全体 */
+.page {
+  height: 100dvh;
+  display: grid;
+  grid-template-columns: 1fr minmax(320px, 430px) 1fr;
+  background: #f7efe3;
+}
+
+/* 左右の固定エリア */
+.side {
+  height: 100dvh;
+  position: sticky;
+  top: 0;
+  background-size: cover;
+  background-position: center;
+}
+
+/* 仮の背景 */
+.side-left {
+  background-image: url("./left-bg.jpg");
+}
+
+.side-right {
+  background-image: url("./right-bg.jpg");
+}
+
+/* 中央だけスクロール */
+.center-scroll {
+  height: 100dvh;
+  overflow-y: auto;
+  overflow-x: hidden;
+  background: white;
+
+  /* スマホでスクロールを自然にする */
+  -webkit-overflow-scrolling: touch;
+}
+
+.content h1 {
+  margin: 0;
+  color: #fff;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  font-size: 17px;
+  background-color: #ff5000;
+}
+
+.content h2 {
+  margin: 0;
+  padding-left: 30px;
+  color: #ff5000;
+  font-size: 100px;
+  font-family: "Dela Gothic One", sans-serif;
+  font-weight: 400;
+}
