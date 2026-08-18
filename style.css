@@ -243,6 +243,7 @@ body {
 }
 
 .clubcomic h2 {
+  font-family: "M PLUS Rounded 1c", sans-serif;
   position: absolute;
   font-size: 15px;
   top: 440px;
@@ -251,4 +252,46 @@ body {
   font-weight: lighter;
   text-decoration: underline #ff5000 0.8px;
   text-underline-offset: 2px;
+}
+
+.illustrationbook {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  height: 280px;
+  background-color: #3493ff;
+}
+
+.illustrationbook h1 {
+  position: absolute;
+  margin: 0;
+  top: 10px;
+  left: 10px;
+  font-family: "Alfa Slab One", serif;
+  font-size: 25px;
+  color: #fff;
+  -webkit-text-stroke-width: 0.5px;
+  -webkit-text-stroke-color: #ff5000;
+  z-index: 2;
+}
+
+.illustrationbook img {
+  position: absolute;
+  top: 25px;
+  left: 60px;
+  width: 300px;
+  height: 240px;
+}
+
+.illustrationbook p {
+  position: absolute;
+  text-align: center;
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  font-size: 15px;
+  padding: 10px;
+  font-weight: lighter;
+  text-decoration: underline #ff5000 0.8px;
+  text-underline-offset: 2px;
+  top: 160px;
+  right: 0;
 }
