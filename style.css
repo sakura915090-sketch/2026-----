@@ -437,17 +437,61 @@ body {
   display: block;
 }
 
+.request-setsumei {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.request-setsumei h1 {
+  font-size: 20px;
+}
+
+.request-setsumei p {
+  font-size: 11px;
+}
+
 .request-contents {
   display: flex;
   flex-direction: row;
+  justify-content: center;
+}
+
+.request-content1 {
+  margin: 20px;
 }
 
 .request-content1 img {
   width: 85px;
+  height: 80px;
 }
+
+.request-content1 p {
+  font-size: 8px;
+}
+
+.request-content2 {
+  margin: 20px;
+}
+
 .request-content2 img {
   width: 85px;
+  height: 80px;
 }
+
+.request-content2 p {
+  font-size: 8px;
+}
+
+.request-content3 {
+  margin: 20px;
+}
+
 .request-content3 img {
   width: 85px;
+  height: 80px;
+}
+
+.request-content3 p {
+  font-size: 8px;
 }
