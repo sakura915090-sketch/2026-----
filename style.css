@@ -403,3 +403,51 @@ body {
   width: 140px;
   height: 160px;
 }
+
+.tab-area {
+  max-width: 600px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.tab-list {
+  display: flex;
+  column-gap: 2px;
+}
+
+.tab {
+  cursor: pointer;
+  flex: 1;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border: 1px solid #666;
+}
+.tab.-active {
+  background-color: #fff;
+}
+
+.tab-panel {
+  height: 230px;
+  padding: 20px;
+  display: none;
+  border: 1px solid #666;
+  line-height: 1.75;
+}
+.tab-panel.-active {
+  display: block;
+}
+
+.request-contents {
+  display: flex;
+  flex-direction: row;
+}
+
+.request-content1 img {
+  width: 85px;
+}
+.request-content2 img {
+  width: 85px;
+}
+.request-content3 img {
+  width: 85px;
+}
