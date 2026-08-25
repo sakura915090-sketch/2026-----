@@ -405,33 +405,52 @@ body {
 }
 
 .tab-area {
+  padding: 0;
+  margin: 0;
   max-width: 600px;
-  margin-right: auto;
-  margin-left: auto;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .tab-list {
+  width: 370px;
   display: flex;
-  column-gap: 2px;
 }
 
 .tab {
+  width: 185px;
   cursor: pointer;
   flex: 1;
   padding-top: 10px;
   padding-bottom: 10px;
-  border: 1px solid #666;
+  border: 5px solid #569069;
+  border-bottom: none;
+  background-color: #fff;
+  border-radius: 15px 15px 0px 0px;
+  font-family: "Alfa Slab One", serif;
+  font-size: 15px;
+  color: #fff;
+  -webkit-text-stroke-width: 0.8px;
+  -webkit-text-stroke-color: #136608;
 }
 .tab.-active {
-  background-color: #fff;
+  border: none;
+  background-color: #06B267;
+  color: #cdf0e1;
+  -webkit-text-stroke-width: 0.8px;
+  -webkit-text-stroke-color: #663608;
 }
 
 .tab-panel {
+  width: 330px;
   height: 230px;
   padding: 20px;
   display: none;
-  border: 1px solid #666;
+  border-radius: 0px 0px 13px 13px;
   line-height: 1.75;
+  background-color: #06b267;
 }
 .tab-panel.-active {
   display: block;
@@ -444,10 +463,15 @@ body {
 }
 
 .request-setsumei h1 {
+  font-family: "Alfa Slab One", serif;
   font-size: 20px;
+  color: #cdf0e1;
+  -webkit-text-stroke-width: 0.5px;
+  -webkit-text-stroke-color: #663608;
 }
 
 .request-setsumei p {
+  color: #fff;
   font-size: 11px;
 }
 
@@ -458,40 +482,89 @@ body {
 }
 
 .request-content1 {
-  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 105px;
+  background-color: #fff;
+  border-radius: 15px;
+  margin-right: 10px;
 }
 
 .request-content1 img {
+  padding: 5px;
   width: 85px;
   height: 80px;
 }
 
 .request-content1 p {
+  color: #000;
   font-size: 8px;
 }
 
 .request-content2 {
-  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 105px;
+  background-color: #fff;
+  border-radius: 15px;
 }
 
 .request-content2 img {
+  padding: 5px;
   width: 85px;
   height: 80px;
 }
 
 .request-content2 p {
+  color: #000;
   font-size: 8px;
 }
 
 .request-content3 {
-  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 105px;
+  background-color: #fff;
+  border-radius: 15px;
+  margin-left: 10px;
 }
 
 .request-content3 img {
+  padding: 5px;
   width: 85px;
   height: 80px;
 }
 
 .request-content3 p {
-  font-size: 8px;
+  color: #000;
+  font-size: 7px;
+}
+
+.yosegaki {
+  position: relative;
+}
+
+.yosegaki-setsumei p {
+  position: absolute;
+  font-size: 11px;
+  color: #fff;
+}
+
+.yosegaki-setsumei1 img{
+  position: absolute;
+  width: 200px;
+  height: 130px;
+  left: 20px;
+  top: 80px;
+}
+
+.yosegaki-setsumei2  img{
+  position: absolute;
+  width: 160px;
+  height: 80px;
+  top: 160px;
+  right: 50px;
 }
