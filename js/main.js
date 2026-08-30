@@ -51,7 +51,7 @@ function tabSwitch(){
         };
       };
   }
-  if (event.type == 'click')　{
+    if (event.type == 'click') {
     resetTab();
     setTab(this, document.querySelectorAll('.js-tab-panel')[index]);
   }
