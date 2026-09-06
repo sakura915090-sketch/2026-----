@@ -250,6 +250,7 @@ body {
   width: 175px;
   height: auto;
   z-index: 2;
+  box-shadow: 0px 0px 10px #47463d;
 }
 
 .clubcomic h2 {
@@ -595,6 +596,71 @@ body {
   right: 50px;
 }
 
+/* ここからメンバー紹介 */
+
+#idWrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;justify-content: center;
+  width: 430px;
+  margin: 0 auto;
+  text-align: left;
+  background-color: #FFE432;
+
+}
+
+#idWrap h1 {
+  font-family: "Alfa Slab One", serif;
+  font-size: 25px;
+  color: #fff;
+  -webkit-text-stroke-width: 0.1px;
+  -webkit-text-stroke-color: #000000;
+}
+
+#idWrap img {
+  width: 180px;
+  height: 240px;
+  box-shadow: 0px 0px 10px #47463d;
+}
+
+
+
+#idCarousel {
+  position: relative;
+  width: 430px;
+  height: 500px;
+  overflow: scroll;
+}
+
+.left {
+  display: none;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  bottom: 0;
+  left: 20px;
+  font-weight: bold;
+  font-size: 30px;
+  cursor: pointer;
+}
+.right {
+  display: none;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  bottom: 0;
+  right: 20px;
+  font-weight: bold;
+  font-size: 30px;
+  cursor: pointer;
+}
+.left:hover,
+.right:hover {
+  color: #666666;
+}
+
+/* ここからリンク */
+
 .links {
   display: flex;
   flex-direction: column;
@@ -613,7 +679,7 @@ body {
   font-size: 25px;
   color: #fff;
   -webkit-text-stroke-width: 0.5px;
-  -webkit-text-stroke-color: #0046AE;
+  -webkit-text-stroke-color: #0046ae;
 }
 
 .links p {
@@ -653,21 +719,19 @@ body {
 }
 
 .facebook img {
-  width:50px;
+  width: 50px;
   height: auto;
 }
-.official{
+.official {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-
 .official img {
   width: 50px;
   height: auto;
 }
-
 
 .official p {
   font-size: 10px;
