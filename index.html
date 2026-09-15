@@ -265,6 +265,149 @@
         </div>
         <!--/idWrap-->
 
+        <div class="tab2">
+          <h1></h1>
+          <!-- タブ -->
+          <div
+            class="tab2-list"
+            role="tablist"
+            aria-label="季節ごとの活動"
+            aria-orientation="vertical"
+          >
+            <button
+              id="tab2-spring"
+              class="tab2-button tab2-spring"
+              role="tab"
+              aria-selected="true"
+              aria-controls="tab2-panel-spring"
+              tabindex="0"
+            >
+              <span class="tab2-icon">
+                <img src="./images/spring.png" alt="" />
+              </span>
+
+              <span class="tab2-label">Spring</span>
+            </button>
+
+            <button
+              id="tab2-summer"
+              class="tab2-button tab2-summer"
+              role="tab"
+              aria-selected="false"
+              aria-controls="tab2-panel-summer"
+              tabindex="-1"
+            >
+              <span class="tab2-icon">
+                <img src="./images/summer.png" alt="" />
+              </span>
+
+              <span class="tab2-label">Summer</span>
+            </button>
+
+            <button
+              id="tab2-autumn"
+              class="tab2-button tab2-autumn"
+              role="tab"
+              aria-selected="false"
+              aria-controls="tab2-panel-autumn"
+              tabindex="-1"
+            >
+              <span class="tab2-icon">
+                <img src="./images/autumn.png" alt="" />
+              </span>
+
+              <span class="tab2-label">Autumn</span>
+            </button>
+
+            <button
+              id="tab2-winter"
+              class="tab2-button tab2-winter"
+              role="tab"
+              aria-selected="false"
+              aria-controls="tab2-panel-winter"
+              tabindex="-1"
+            >
+              <span class="tab2-icon">
+                <img src="./images/winter.png" alt="" />
+              </span>
+
+              <span class="tab2-label">Winter</span>
+            </button>
+          </div>
+
+          <!-- コンテンツ -->
+          <div class="tab2-panels">
+            <section
+              id="tab2-panel-spring"
+              class="tab2-panel"
+              role="tabpanel"
+              aria-labelledby="tab2-spring"
+              tabindex="0"
+            >
+              <p class="tab2-description1">
+                仮入部では新入生と絵を描くゲームをします！<br />
+                自己紹介本の原稿を配ったり、春部誌の制作をします
+              </p>
+
+              <div class="tab2-photos">
+                <img
+                  class="tab2-photo tab2-photo-main"
+                  src="./images/spring-1.jpg"
+                  alt=""
+                />
+
+                <img
+                  class="tab2-photo tab2-photo-sub"
+                  src="./images/spring-2.jpg"
+                  alt=""
+                />
+              </div>
+            </section>
+
+            <section
+              id="tab2-panel-summer"
+              class="tab2-panel"
+              role="tabpanel"
+              aria-labelledby="tab2-summer"
+              tabindex="0"
+              hidden
+            >
+              <p class="tab2-description2">
+                部誌の制作に注力する時期です！<br>
+                また夏休みには美術部と合同で合宿を行います！<br>
+                昨年度は静岡県の熱海に行きました</p>
+            </section>
+
+            <section
+              id="tab2-panel-autumn"
+              class="tab2-panel"
+              role="tabpanel"
+              aria-labelledby="tab2-autumn"
+              tabindex="0"
+              hidden
+            >
+              <p class="tab2-description3">
+                文化祭があります！<br>
+                高二は文化祭後引き継ぎを行い、部活を引退します
+              </p>
+            </section>
+
+            <section
+              id="tab2-panel-winter"
+              class="tab2-panel"
+              role="tabpanel"
+              aria-labelledby="tab2-winter"
+              tabindex="0"
+              hidden
+            >
+              <p class="tab2-description4">
+                冬部誌（版権あり）の発行をしたり<br>
+                次年度にやりたい活動を考えたりする時期です！
+              </p>
+            </section>
+          </div>
+        </div>
+
         <section class="links">
           <h1>LINKS</h1>
           <p>
