@@ -264,149 +264,223 @@
           <!--/idCarousel-->
         </div>
         <!--/idWrap-->
-
-        <div class="tab2">
-          <h1></h1>
-          <!-- タブ -->
-          <div
-            class="tab2-list"
-            role="tablist"
-            aria-label="季節ごとの活動"
-            aria-orientation="vertical"
-          >
-            <button
-              id="tab2-spring"
-              class="tab2-button tab2-spring"
-              role="tab"
-              aria-selected="true"
-              aria-controls="tab2-panel-spring"
-              tabindex="0"
+        <section class="schedule">
+          <h1>SCHEDULE</h1>
+          <div class="tab2">
+            <h1></h1>
+            <!-- タブ -->
+            <div
+              class="tab2-list"
+              role="tablist"
+              aria-label="季節ごとの活動"
+              aria-orientation="vertical"
             >
-              <span class="tab2-icon">
-                <img src="./images/spring.png" alt="" />
-              </span>
+              <button
+                id="tab2-spring"
+                class="tab2-button tab2-spring"
+                role="tab"
+                aria-selected="true"
+                aria-controls="tab2-panel-spring"
+                tabindex="0"
+              >
+                <span class="tab2-icon">
+                  <img src="./images/spring.png" alt="" />
+                </span>
 
-              <span class="tab2-label">Spring</span>
-            </button>
+                <span class="tab2-label">Spring</span>
+              </button>
 
-            <button
-              id="tab2-summer"
-              class="tab2-button tab2-summer"
-              role="tab"
-              aria-selected="false"
-              aria-controls="tab2-panel-summer"
-              tabindex="-1"
-            >
-              <span class="tab2-icon">
-                <img src="./images/summer.png" alt="" />
-              </span>
+              <button
+                id="tab2-summer"
+                class="tab2-button tab2-summer"
+                role="tab"
+                aria-selected="false"
+                aria-controls="tab2-panel-summer"
+                tabindex="-1"
+              >
+                <span class="tab2-icon">
+                  <img src="./images/summer.png" alt="" />
+                </span>
 
-              <span class="tab2-label">Summer</span>
-            </button>
+                <span class="tab2-label">Summer</span>
+              </button>
 
-            <button
-              id="tab2-autumn"
-              class="tab2-button tab2-autumn"
-              role="tab"
-              aria-selected="false"
-              aria-controls="tab2-panel-autumn"
-              tabindex="-1"
-            >
-              <span class="tab2-icon">
-                <img src="./images/autumn.png" alt="" />
-              </span>
+              <button
+                id="tab2-autumn"
+                class="tab2-button tab2-autumn"
+                role="tab"
+                aria-selected="false"
+                aria-controls="tab2-panel-autumn"
+                tabindex="-1"
+              >
+                <span class="tab2-icon">
+                  <img src="./images/autumn.png" alt="" />
+                </span>
 
-              <span class="tab2-label">Autumn</span>
-            </button>
+                <span class="tab2-label">Autumn</span>
+              </button>
 
-            <button
-              id="tab2-winter"
-              class="tab2-button tab2-winter"
-              role="tab"
-              aria-selected="false"
-              aria-controls="tab2-panel-winter"
-              tabindex="-1"
-            >
-              <span class="tab2-icon">
-                <img src="./images/winter.png" alt="" />
-              </span>
+              <button
+                id="tab2-winter"
+                class="tab2-button tab2-winter"
+                role="tab"
+                aria-selected="false"
+                aria-controls="tab2-panel-winter"
+                tabindex="-1"
+              >
+                <span class="tab2-icon">
+                  <img src="./images/winter.png" alt="" />
+                </span>
 
-              <span class="tab2-label">Winter</span>
-            </button>
+                <span class="tab2-label">Winter</span>
+              </button>
+            </div>
+
+            <!-- コンテンツ -->
+            <div class="tab2-panels">
+              <section
+                id="tab2-panel-spring"
+                class="tab2-panel"
+                role="tabpanel"
+                aria-labelledby="tab2-spring"
+                tabindex="0"
+              >
+                <p class="tab2-description1">
+                  仮入部では新入生と絵を描くゲームをします！<br />
+                  自己紹介本の原稿を配ったり、春部誌の制作をします
+                </p>
+
+                <div class="tab2-photos">
+                  <img
+                    class="tab2-photo tab2-photo-main"
+                    src="./images/spring-1.jpg"
+                    alt=""
+                  />
+
+                  <img
+                    class="tab2-photo tab2-photo-sub"
+                    src="./images/spring-2.jpg"
+                    alt=""
+                  />
+                </div>
+              </section>
+
+              <section
+                id="tab2-panel-summer"
+                class="tab2-panel"
+                role="tabpanel"
+                aria-labelledby="tab2-summer"
+                tabindex="0"
+                hidden
+              >
+                <p class="tab2-description2">
+                  部誌の制作に注力する時期です！<br />
+                  また夏休みには美術部と合同で合宿を行います！<br />
+                  昨年度は静岡県の熱海に行きました
+                </p>
+              </section>
+
+              <section
+                id="tab2-panel-autumn"
+                class="tab2-panel"
+                role="tabpanel"
+                aria-labelledby="tab2-autumn"
+                tabindex="0"
+                hidden
+              >
+                <p class="tab2-description3">
+                  文化祭があります！<br />
+                  高二は文化祭後引き継ぎを行い、部活を引退します
+                </p>
+              </section>
+
+              <section
+                id="tab2-panel-winter"
+                class="tab2-panel"
+                role="tabpanel"
+                aria-labelledby="tab2-winter"
+                tabindex="0"
+                hidden
+              >
+                <p class="tab2-description4">
+                  冬部誌（版権あり）の発行をしたり<br />
+                  次年度にやりたい活動を考えたりする時期です！
+                </p>
+              </section>
+            </div>
           </div>
+        </section>
+        <section class="faq">
+          <div class="faq-phone">
+            <!-- スマホ上部 -->
+            <div class="faq-header">
+              <h1>FAQ</h1>
 
-          <!-- コンテンツ -->
-          <div class="tab2-panels">
-            <section
-              id="tab2-panel-spring"
-              class="tab2-panel"
-              role="tabpanel"
-              aria-labelledby="tab2-spring"
-              tabindex="0"
-            >
-              <p class="tab2-description1">
-                仮入部では新入生と絵を描くゲームをします！<br />
-                自己紹介本の原稿を配ったり、春部誌の制作をします
-              </p>
+              <div class="faq-icons">♡</div>
+            </div>
 
-              <div class="tab2-photos">
-                <img
-                  class="tab2-photo tab2-photo-main"
-                  src="./images/spring-1.jpg"
-                  alt=""
-                />
+            <!-- ここだけスクロールする -->
+            <div class="faq-chat">
+              <!-- 1個目 -->
+               <div class="faq-set">
+                <div class="faq-question">
+                  普段の活動は？</div>
 
-                <img
-                  class="tab2-photo tab2-photo-sub"
-                  src="./images/spring-2.jpg"
-                  alt=""
-                />
+                <div class="faq-answer">
+                  毎週火曜日と金曜部に美術室で<br>
+                  批評会をしたり、<br>
+                  絵を描くようなゲームをしたり<br>
+                  個人で制作したりしています！<br>
+                  ゆるいです
+                </div>
               </div>
-            </section>
 
-            <section
-              id="tab2-panel-summer"
-              class="tab2-panel"
-              role="tabpanel"
-              aria-labelledby="tab2-summer"
-              tabindex="0"
-              hidden
-            >
-              <p class="tab2-description2">
-                部誌の制作に注力する時期です！<br>
-                また夏休みには美術部と合同で合宿を行います！<br>
-                昨年度は静岡県の熱海に行きました</p>
-            </section>
+              <!-- 2個目 -->
+               <div class="faq-set">
+                <div class="faq-question">
+                  部員は何人くらい？
+                </div>
 
-            <section
-              id="tab2-panel-autumn"
-              class="tab2-panel"
-              role="tabpanel"
-              aria-labelledby="tab2-autumn"
-              tabindex="0"
-              hidden
-            >
-              <p class="tab2-description3">
-                文化祭があります！<br>
-                高二は文化祭後引き継ぎを行い、部活を引退します
-              </p>
-            </section>
+                <div class="faq-answer">現在は25人で活動しています！</div>
+              </div>
 
-            <section
-              id="tab2-panel-winter"
-              class="tab2-panel"
-              role="tabpanel"
-              aria-labelledby="tab2-winter"
-              tabindex="0"
-              hidden
-            >
-              <p class="tab2-description4">
-                冬部誌（版権あり）の発行をしたり<br>
-                次年度にやりたい活動を考えたりする時期です！
-              </p>
-            </section>
+              <!-- 3個目 -->
+               <div class="faq-set">
+                <div class="faq-question">漫画を描いたことがなくても大丈夫？</div>
+
+                <div class="faq-answer">
+                  大丈夫です！<br>
+                  イラストだけ描くということも<br>
+                  できますし、道具がなくて<br>
+                  描けないという場合は<br>
+                  トーンやペンを貸し出すことが<br>
+                  できます！
+              </div>
+              </div>
+
+              <!-- 4個目 -->
+              <div class="faq-set">
+                <div class="faq-question">美術部とは何が違うのですか？</div>
+
+                <div class="faq-answer">
+                  美術部では美術の授業のように、<br>
+                  油絵の制作などを行います。<br>
+                  イラストや漫画を描きたい<br>
+                  という人は漫研への入部を<br>
+                  強くお勧めします!
+                </div>
+              </div>
+
+              <div class="faq-set">
+                <div class="faq-question">兼部はできますか？</div>
+                <div class="faq-answer">
+                  もちろん大丈夫です！<br>
+                  実際漫研にも演劇部やスキー部<br>
+                  などと兼部している部員もいます！
+                </div>
+              </div>
           </div>
-        </div>
+        </section>
 
         <section class="links">
           <h1>LINKS</h1>

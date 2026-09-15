@@ -175,3 +175,39 @@ tab2List.addEventListener("keydown", (event) => {
 
   activateTab2(tab2NextTab);
 });
+
+const chat = document.querySelector(".faq-chat");
+
+const sets = document.querySelectorAll(".faq-set");
+
+
+const observer = new IntersectionObserver(
+  (entries) => {
+
+    entries.forEach((entry) => {
+
+      if (entry.isIntersecting) {
+
+        entry.target.classList.add("show");
+
+        observer.unobserve(entry.target);
+
+      }
+
+    });
+
+  },
+  {
+    root: chat,
+    threshold: 0.5
+  }
+);
+
+
+sets.forEach((set) => {
+  observer.observe(set);
+});
+
+
+// 1セット目は最初から表示
+sets[0].classList.add("show");
