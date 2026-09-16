@@ -323,13 +323,31 @@ body {
   flex-direction: column;
   align-items: center;
   position: relative;
-  height: 390px;
+  height: 370px;
   background-color: #3493ff;
 }
 
 .board img {
+  position: absolute;
+  width: 130px;
+}
+
+.boardimages img {
   width: 120px;
 }
+
+.board-haikei1 {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+}
+
+.board-haikei2 {
+  position: absolute;
+  bottom: 0px;
+  left: 10px;
+}
+
 
 .board .boardimages {
   display: flex;
@@ -371,11 +389,14 @@ body {
 }
 
 .board p {
+  display: flex;
+  text-align: center;
   position: absolute;
   font-family: "M PLUS Rounded 1c", sans-serif;
   font-size: 15px;
   padding: 10px;
   font-weight: lighter;
+  color: #fff;
   top: 250px;
 }
 
@@ -786,7 +807,8 @@ body {
 
   overflow: hidden;
 
-  padding: 30px 30px 40px 20px;
+  padding:0px;
+  border: #848484 1px solid;
 }
 
 /* ==============================
@@ -858,6 +880,21 @@ body {
 }
 
 #tab2-panel-spring {
+  background-image: url(images/note.png);
+  background-size: cover;
+}
+
+#tab2-panel-summer {
+  background-image: url(images/note.png);
+  background-size: cover;
+}
+
+#tab2-panel-autumn {
+  background-image: url(images/note.png);
+  background-size: cover;
+}
+
+#tab2-panel-winter {
   background-image: url(images/note.png);
   background-size: cover;
 }
