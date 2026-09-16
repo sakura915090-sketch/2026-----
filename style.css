@@ -780,7 +780,7 @@ body {
   position: relative;
 
   width: 430px;
-  height: 650px;
+  height: 500px;
 
   margin: 0 auto;
 
@@ -1248,4 +1248,26 @@ body {
     transform: translateY(0) scale(1);
   }
 
+}
+
+/* ふわっとださせる */
+.fadein {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.5s ease;
+}
+
+.fadein.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.background {
+  position: absolute;
+  z-index: 5;
+}
+
+.fadein {
+  position: relative;
+  z-index: 10;
 }

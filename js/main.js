@@ -211,3 +211,28 @@ sets.forEach((set) => {
 
 // 1セット目は最初から表示
 sets[0].classList.add("show");
+
+// ==============================
+// fadein
+// ==============================
+
+const fadeins = document.querySelectorAll(".fadein");
+
+const fadeObserver = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("show");
+        fadeObserver.unobserve(entry.target);
+      }
+    });
+  },
+  {
+    root: null,
+    threshold: 0.2
+  }
+);
+
+fadeins.forEach((fadein) => {
+  fadeObserver.observe(fadein);
+});
